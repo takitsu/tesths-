@@ -1,2 +1,10 @@
+
+
+half x = case even x of
+  True -> Just x 
+  False -> Nothing
+
+main :: IO ()
 main = do
-	print "hoge"
+  let Just h = ((Just 12) >>= half)
+  print h 
