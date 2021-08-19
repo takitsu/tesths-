@@ -1,4 +1,4 @@
--- action tst 
+-- action test 
 
 half x = case even x of
   True -> Just x 
